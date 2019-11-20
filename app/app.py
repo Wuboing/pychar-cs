@@ -17,7 +17,7 @@ def login():
     if request.method == 'POST':
         if request.form['username'] != 'admin' or \
             request.form['password'] != '123456':
-            error = 'Invalid username or password. Please try again!'
+            error = '密码错误，重新输入'
         else:
             flash('You were successfully logged in')
             return redirect(url_for('index'))
