@@ -15,5 +15,20 @@
   {% endwith %}
 
   <h1>Flask Message Flashing Example</h1>
-  <p>Do you want to <a href = "{{ url_for('login') }}">
+  <p class="tip-login">Do you want to <a href = "{{ url_for('login') }}">
      <b>log in?</b></a></p>
+
+    <button onclick="mybutton()">点击测试js事件</button>
+
+<script>
+    function mybutton() {
+        alert('abc')
+    }
+</script>
+
+<style>
+    .tip-login{
+        color: aquamarine;
+        border: 1px solid rebeccapurple;
+    }
+</style>
